@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="logo.jpeg">
+    <title>Seguimiento</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body class="body__grid">
+    
+    <!-- E N C A B E Z A D O,  T I T U L O   Y   L O G O   P R I N C I P A L E S -->
+
+    <header class="header__flex">
+        <h1 class="header__tituloInicial">Canal de Denuncias</h1>
+        <img class="header__logoInicial" src="../imagenes/logo.jpeg" alt="imagen de diseño">
+    </header>
+    
+    <!-- M E N U   D E   N A V E G A C I O N -->
+
+    <nav class="nav__flex">
+        <ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="denuncia.html">Realiza tu denuncia</a></li>
+			<li><a href="seguimiento.html">Seguimiento de tu denuncia</a></li>
+			<li><a href="instructivos.html">Instructivos</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+    </nav>
+
+    <!-- S E C C I O N   P R I N C I P A L -->
+
+    <main class="main__gridSeguimiento">
+
+        <!-- T I T U L O   P A G I N A     Y     C O N S I G N A -->
+
+        <div class="titulo__Seguimiento">
+            <h2>Seguimiento de tu denuncia</h2>
+        </div>
+        <div class="subtitulo__consignaSeguimiento">
+            <h3>Podes hacer el seguimiento de tu denuncia ingresando tu número de trámite y tu número de documento.<br/> 
+                El tipo de trámite lo podes encontrar en el mail que te enviamos el día que realizaste la denuncia:</h3>
+        </div>
+
+        <!-- F O R M U L A R I O -->
+
+        <form class="formulario__Seguimiento" action="#" method="post" enctype="application/x-www-form-urlencoded">
+
+            <label class="LS1" for="Número de trámite"> Número de trámite </label>
+            <input class="IS1" id="Número de trámite" type="number" name="Número de trámite" placeholder="Ingresa tu número de trámite"> <br/>
+
+            <label class="LS2" for="Número de documento"> Número de documento </label>
+            <input class="IS2" id="Número de documento" type="number" name="Número de documento" placeholder="Ingresa tu número de DNI"> <br/>
+
+            <label class="LS3" for="Tipo de trámite"> Tipo de trámite </label>
+            <select class="IS3" name="Tipo de trámite">
+                <option value="A"> A </option>
+                <option value="B"> B </option>
+                <option value="C"> C </option>
+                </select> <br/>
+
+            <input class="IS4" type="submit" value="Buscar"/>
+            <input class="IS5" type="reset" value="Limpiar formulario"/>
+            
+        </form> <br/>
+
+        <!-- T A B L A   D E   T I P O S   D E   T R A M I T E S -->
+
+        <section class="tabla__Tramites"> 
+
+            <table class="tabla__TipoTramites" cellspacing="10" cellpadding="30" border="2">
+                <tr> <!-- inicio de fila-->   
+                  <th>Tipo de trámite</th>   
+                  <th>Significado</th>   
+
+                </tr> <!-- cierre de fila -->  
+                
+                <tr> <!-- inicio de otra fila-->   
+                  <td> A </td>   
+                  <td> Denuncias laborales</td>   
+                </tr> <!-- cierre de la segunda fila --> 
+
+                <tr> <!-- inicio de otra fila-->   
+                    <td> B </td>   
+                    <td> Denuncias penales</td>   
+                  </tr> <!-- cierre de la segunda fila --> 
+
+                <tr> <!-- inicio de otra fila-->   
+                    <td> C </td>   
+                    <td> Denuncias ambientales</td>   
+                </tr> <!-- cierre de la segunda fila --> 
+             
+            </table>
+              
+        </section>
+        
+    </main>
+
+    <!-- F O O T E R -->
+
+    <footer class="footer__Seguimiento">
+        <h4>Av. España 679, Ciudad, Mendoza - Argentina</h4>
+        <h4>amc.canaldedenuncias@gmail.com</h4>
+        <h4>Copyright 2022. Todos los derechos reservados</h4>
+    </footer>
+</body>
+</html>

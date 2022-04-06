@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="logo.jpeg">
+    <title>Denuncia</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body class="body__grid">
+        
+    <!-- E N C A B E Z A D O,  T I T U L O   Y   L O G O   P R I N C I P A L E S -->
+
+    <header class="header__flex">
+        <h1 class="header__tituloInicial">Canal de Denuncias</h1>
+        <img class="header__logoInicial" src="../imagenes/logo.jpeg" alt="imagen de diseño">
+    </header>
+    
+    <!-- M E N U   D E   N A V E G A C I O N -->
+
+    <nav class="nav__flex">
+        <ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="denuncia.html">Realiza tu denuncia</a></li>
+			<li><a href="seguimiento.html">Seguimiento de tu denuncia</a></li>
+			<li><a href="instructivos.html">Instructivos</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+    </nav>
+
+    <!-- S E C C I O N   P R I N C I P A L -->
+
+    <main class="main__gridDenuncia">
+
+        <!-- T I T U L O    P A G I N A    Y    C O N S I G N A -->
+
+        <div class="titulo__Denuncia">
+            <h2>Realiza tu denuncia</h2>
+        </div>
+        <div class="subtitulo__consignaDenuncia">
+            <h3>Completa el siguiente formulario de denuncia:</h3>
+        </div>
+        
+        <!-- F O R M U L A R I O -->
+
+        <form class="formulario__Denuncias" action="#" method="post" enctype="application/x-www-form-urlencoded">
+
+            <label class="LD1" for="Nombre y apellido"> Nombre y apellido </label>
+            <input class="ID1" id="Nombre y apellido" type="text" name="Nombre y apellido" placeholder="Ingresa tu nombre y apellido"> <br/>
+
+            <label class="LD2" for="Número de documento"> Número de documento </label>
+            <input class="ID2" id="Número de documento" type="number" name="Número de documento" placeholder="Ingresa tu DNI"> <br/>
+
+            <label class="LD3" for="Número de contacto"> Número de contacto </label>
+            <input class="ID3" id="Número de contacto" type="text" name="Número de contacto" placeholder="Ingresa tu número de celular"> <br/>
+
+            <label class="LD4" for="E-mail"> E-mail </label>
+            <input class="ID4" id="E-mail" type="email" name="E-mail" placeholder="Ingresa tu correo electrónico"> <br/>
+
+            <label class="LD5" for="¿Perteneces a la Empresa?"> ¿Perteneces a la Empesa? </label>
+            <input class="ID5SI" type="radio" name="¿Perteneces a la Empesa?" value="SI"/> si
+            <input class="ID5NO" type="radio" name="¿Perteneces a la Empesa?" value="NO"/> no <br/>
+
+            <label class="LD6" for="Denuncia"> Denuncia </label>
+            <textarea class="ID6" id="Denuncia" name="Mensaje" cols="30" rows="10" placeholder="Escribe tu denuncia">  </textarea> <br/>
+
+            <label class="LD7" for="Acepta términos y condiciones"> Acepta términos y condiciones </label>
+            <input class="ID7" id="Acepta términos y condiciones" type="checkbox" name="Acepta términos y condiciones" value="1" /> <br/>
+
+            <input class="ID8" type="submit" value="Enviar"/>
+            <input class="ID9" type="reset" value="Limpiar formulario"/>
+            
+        </form>
+        
+    </main>
+
+    <!-- F O O T E R -->
+    
+    <footer class="footer__Denuncia">
+        <h4>Av. España 679, Ciudad, Mendoza - Argentina</h4>
+        <h4>amc.canaldedenuncias@gmail.com</h4>
+        <h4>Copyright 2022. Todos los derechos reservados</h4>
+    </footer>
+</body>
+</html>
