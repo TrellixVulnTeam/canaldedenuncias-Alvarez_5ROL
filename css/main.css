@@ -14,6 +14,9 @@ header {
     width: 320px;
     display: inline-block;
     padding: 40px 50px 70px 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
 }
 
 .header__tituloInicial {
@@ -33,10 +36,16 @@ header {
     0% {
         opacity: 0;
     }
+<<<<<<< HEAD
 
     100% {
         opacity: 1;
     }   
+=======
+    100% {
+        opacity: 1;
+    }
+>>>>>>> mi-primer-rama
 }
 
 ul li {
