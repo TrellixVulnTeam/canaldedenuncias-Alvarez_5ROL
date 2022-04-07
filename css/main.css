@@ -14,6 +14,9 @@ header {
     width: 320px;
     display: inline-block;
     padding: 40px 50px 70px 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
 }
 
 .header__tituloInicial {
@@ -24,6 +27,18 @@ header {
     display: inline-block;
     text-shadow: 2px 2px antiquewhite;
     padding: 80px 20px 20px 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 ul li {
