@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="logo.jpeg">
     <title>Seguimiento</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
@@ -15,58 +16,73 @@
     
     <!-- E N C A B E Z A D O,  T I T U L O   Y   L O G O   P R I N C I P A L E S -->
 
-    <header class="header__flex">
-        <h1 class="header__tituloInicial">Canal de Denuncias</h1>
-        <img class="header__logoInicial" src="../imagenes/logo.jpeg" alt="imagen de diseño">
+    <header>
+        <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="header__tituloInicial">Canal de Denuncias</h1>
+            </div>
+            <div class="col-sm">
+                <img class="header__logoInicial" src="../imagenes/logo.jpeg" alt="imagen de diseño">
+            </div>
+        </div>
+        </div>
     </header>
     
     <!-- M E N U   D E   N A V E G A C I O N -->
 
-    <nav class="nav__flex">
-        <ul>
-			<li><a href="../index.html">Home</a></li>
-			<li><a href="denuncia.html">Realiza tu denuncia</a></li>
-			<li><a href="seguimiento.html">Seguimiento de tu denuncia</a></li>
-			<li><a href="instructivos.html">Instructivos</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-		</ul>
-    </nav>
+    <nav>
+        <div class="container">
+        <div class="row">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="denuncia.html">Realiza tu denuncia</a></li>
+                <li class="nav-item"><a class="nav-link" href="seguimiento.html">Seguimiento de tu denuncia</a></li>
+                <li class="nav-item"><a class="nav-link" href="instructivos.html">Instructivos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav> 
 
     <!-- S E C C I O N   P R I N C I P A L -->
 
-    <main class="main__gridSeguimiento">
+    <main>
 
         <!-- T I T U L O   P A G I N A     Y     C O N S I G N A -->
 
-        <div class="titulo__Seguimiento">
+        <div class="container">
             <h2>Seguimiento de tu denuncia</h2>
         </div>
-        <div class="subtitulo__consignaSeguimiento">
+        <div class="container">
             <h3>Podes hacer el seguimiento de tu denuncia ingresando tu número de trámite y tu número de documento.<br/> 
                 El tipo de trámite lo podes encontrar en el mail que te enviamos el día que realizaste la denuncia:</h3>
         </div>
 
         <!-- F O R M U L A R I O -->
 
-        <form class="formulario__Seguimiento" action="#" method="post" enctype="application/x-www-form-urlencoded">
+        <form>
+            <div class="form-group"> 
+                <label for="formGroupExampleInput">Número de trámite</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu número de trámite">
+            </div>
 
-            <label class="LS1" for="Número de trámite"> Número de trámite </label>
-            <input class="IS1" id="Número de trámite" type="number" name="Número de trámite" placeholder="Ingresa tu número de trámite"> <br/>
+            <div class="form-group"> 
+                <label for="formGroupExampleInput">Número de documento</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu DNI">
+            </div>
 
-            <label class="LS2" for="Número de documento"> Número de documento </label>
-            <input class="IS2" id="Número de documento" type="number" name="Número de documento" placeholder="Ingresa tu número de DNI"> <br/>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Tipo de trámite</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>A</option>
+                  <option>B</option>
+                  <option>C</option>
+                </select>
+              </div>
 
-            <label class="LS3" for="Tipo de trámite"> Tipo de trámite </label>
-            <select class="IS3" name="Tipo de trámite">
-                <option value="A"> A </option>
-                <option value="B"> B </option>
-                <option value="C"> C </option>
-                </select> <br/>
-
-            <input class="IS4" type="submit" value="Buscar"/>
-            <input class="IS5" type="reset" value="Limpiar formulario"/>
-            
-        </form> <br/>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
 
         <!-- T A B L A   D E   T I P O S   D E   T R A M I T E S -->
 
@@ -102,10 +118,18 @@
 
     <!-- F O O T E R -->
 
-    <footer class="footer__Seguimiento">
-        <h4>Av. España 679, Ciudad, Mendoza - Argentina</h4>
-        <h4>amc.canaldedenuncias@gmail.com</h4>
-        <h4>Copyright 2022. Todos los derechos reservados</h4>
+    <footer>
+        <div class="container">
+        <div class="row">
+            <h6>Av. España 679, Ciudad, Mendoza - Argentina</h6>
+            <h6>amc.canaldedenuncias@gmail.com</h6>
+            <h6>Copyright 2022. Todos los derechos reservados</h6>
+        </div>
+        </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
 </body>
 </html>

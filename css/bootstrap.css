@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(to right, #e2b375,#ecca9d,white, white);
+}
+
+.header__logoInicial {
+    width: 320px;
+    display: inline-block;
+    padding: 40px 50px 70px 20px;
+    position: absolute;
+    right: 0px;
+}
+
+.header__tituloInicial {
+    color:#bc843a;
+    font-size: 60px;
+    text-align: left;
+    font-family: 'Public Sans', sans-serif;
+    display: inline-block;
+    text-shadow: 2px 2px antiquewhite;
+    padding: 80px 20px 20px 20px;
+}
+
+.img-rounded {
+    width: 100%;
+}
+
+form {
+    padding: 30px;
+}
+
+h2 , h3 , h4 , h5 , h6 {
+    padding: 20px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .header__logoInicial {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .header__logoInicial {
+        display: none;
+    }
+}

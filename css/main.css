@@ -36,16 +36,13 @@ header {
     0% {
         opacity: 0;
     }
-<<<<<<< HEAD
 
     100% {
         opacity: 1;
     }   
-=======
     100% {
         opacity: 1;
     }
->>>>>>> mi-primer-rama
 }
 
 ul li {
