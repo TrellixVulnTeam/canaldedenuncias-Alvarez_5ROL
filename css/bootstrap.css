@@ -1,168 +1,113 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /* E S T I L O S     H E A D E R */
-
 header {
-    background-image: linear-gradient(to right, #e2b375,#ecca9d,#ecca9d, white,white,white);
-}
+  background-image: linear-gradient(to right, #e2b375, #ecca9d, #ecca9d, white, white, white); }
 
 .header__logoInicial {
-    width: 320px;
-    display: inline-block;
-    padding: 40px 50px 70px 20px;
-    position: absolute;
-    right: 0px;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
-}
+  width: 320px;
+  display: inline-block;
+  padding: 40px 50px 70px 20px;
+  position: absolute;
+  right: 0px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: initial; }
 
 .header__tituloInicial {
-    color:#bc843a;
-    font-size: 60px;
-    text-align: left;
-    font-family: 'Public Sans', sans-serif;
-    display: inline-block;
-    text-shadow: 2px 2px antiquewhite;
-    padding: 20px 20px 20px 20px;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
-}
+  color: #bc843a;
+  font-size: 60px;
+  text-align: left;
+  font-family: 'Public Sans', sans-serif;
+  display: inline-block;
+  text-shadow: 2px 2px antiquewhite;
+  padding: 20px 20px 20px 20px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: initial; }
 
 /* A N I M A C I O N    H E A D E R */
-
 @keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }   
-    100% {
-        opacity: 1;
-    }
-}
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 
 .img-rounded {
-    width: 100%;
-}
+  width: 100%; }
 
 /* E S T I L O S    M E N U    D E     N A V E G A C I O N */
-
 ul li {
-    list-style: none;
-    display: inline;
-    text-transform: uppercase;
-    background-color: #e2b375;
-    background-image: linear-gradient(to right, #f0d6b4, antiquewhite, antiquewhite,antiquewhite, antiquewhite);
-    transform: translate(-105px);
-}
+  list-style: none;
+  display: inline;
+  text-transform: uppercase;
+  background-color: #e2b375;
+  background-image: linear-gradient(to right, #f0d6b4, antiquewhite, antiquewhite, antiquewhite, antiquewhite);
+  transform: translate(-105px); }
 
 .nav-link {
-    text-decoration: none;
-    color:rgb(97, 96, 96);
-}
+  text-decoration: none;
+  color: #616060; }
 
 li:hover {
-    border: 1px solid #bc843a;
-}
+  border: 1px solid #bc843a; }
 
 .dropdown {
-    display: none;
-}
+  display: none; }
 
 /* E S T I L O S     F O R M U L A R I O S */
-
 form {
-    padding: 30px 100px 30px 100px;
-}
+  padding: 30px 100px 30px 100px; }
 
 /* E S T I L O S     T E X T O S */
-
-h2 , h3 , h4 , h5 {
-    padding: 40px 0px 0px 0px;
-    color:rgb(97, 96, 96);
-    font-family: 'Public Sans', sans-serif;
-    text-shadow: 2px 2px antiquewhite;
-}
+h2, h3, h4, h5 {
+  padding: 40px 0px 0px 0px;
+  color: #616060;
+  font-family: 'Public Sans', sans-serif;
+  text-shadow: 2px 2px antiquewhite; }
 
 h4 {
-    transform: translate(150px);
-}
+  transform: translate(150px); }
 
 h6 {
-    padding: 20px;
-    color: white;
-    font-family: 'Public Sans', sans-serif;
-}
-
+  padding: 20px;
+  color: white;
+  font-family: 'Public Sans', sans-serif; }
 
 /* E S T I L O S     M U L T I M E D I A */
-
-.imagen__instructivoPasos , .video__Canal , .video__Codigo {
-    padding: 20px;
-}
+.imagen__instructivoPasos, .video__Canal, .video__Codigo {
+  padding: 20px; }
 
 /* E S T I L O S     F O O T E R */
-
 footer {
-    background-color:#bc843a ;
-}
+  background-color: #bc843a; }
 
 /* M E D I A     Q U E R I E S */
-
 @media screen and (max-width: 900px) {
-
-    .header__logoInicial {
-        width: 200px;
-    }
-
-    nav .container {
-        display: none;
-    }
-
-    .dropdown {
-        display: inline-block;
-    }
-
-}
-
+  .header__logoInicial {
+    width: 200px; }
+  nav .container {
+    display: none; }
+  .dropdown {
+    display: inline-block; } }
 
 @media screen and (max-width: 600px) {
-
-    .header__logoInicial {
-        display: none;
-    }
-
-    .header__tituloInicial {
-        font-size: 50px;
-    }
-
-    nav .container {
-        display: none;
-    }
-
-    .dropdown {
-        display: inline-block;
-    }
-
-    .imagen__instructivoPasos , .video__Canal , .video__Codigo {
-        width: 100%;
-    }    
-
-    h4 {
-        transform: translate(0px);
-    }
-
-    form {
-        padding: 10px;
-    }
-
-
-}
+  .header__logoInicial {
+    display: none; }
+  .header__tituloInicial {
+    font-size: 50px; }
+  nav .container {
+    display: none; }
+  .dropdown {
+    display: inline-block; }
+  .imagen__instructivoPasos, .video__Canal, .video__Codigo {
+    width: 100%; }
+  h4 {
+    transform: translate(0px); }
+  form {
+    padding: 10px; } }
