@@ -21,7 +21,7 @@ header {
   color: #bc843a;
   font-size: 60px;
   text-align: left;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   display: inline-block;
   text-shadow: 2px 2px antiquewhite;
   padding: 20px 20px 20px 20px;
@@ -49,13 +49,12 @@ ul li {
   background-color: #e2b375;
   background-image: linear-gradient(to right, #f0d6b4, antiquewhite, antiquewhite, antiquewhite, antiquewhite);
   transform: translate(-105px); }
+  ul li:hover {
+    border: 1px solid #bc843a; }
 
 .nav-link {
   text-decoration: none;
   color: #616060; }
-
-li:hover {
-  border: 1px solid #bc843a; }
 
 .dropdown {
   display: none; }
@@ -68,7 +67,7 @@ form {
 h2, h3, h4, h5 {
   padding: 40px 0px 0px 0px;
   color: #616060;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   text-shadow: 2px 2px antiquewhite; }
 
 h4 {
@@ -77,7 +76,7 @@ h4 {
 h6 {
   padding: 20px;
   color: white;
-  font-family: 'Public Sans', sans-serif; }
+  font-family: "Public Sans", sans-serif; }
 
 /* E S T I L O S     M U L T I M E D I A */
 .imagen__instructivoPasos, .video__Canal, .video__Codigo {
