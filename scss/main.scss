@@ -3,6 +3,7 @@ $color-secundario: #ecca9d;
 $color-titulo: #bc843a;
 $color-blanco: white;
 $color-claro: antiquewhite;
+$fuente-principal: 'Public Sans', sans-serif;
 
 * {
     margin: 0;
@@ -16,29 +17,29 @@ header {
     background-image: linear-gradient(to right, $color-principal,$color-secundario,$color-secundario, $color-blanco,$color-blanco,$color-blanco);
 }
 
-.header__logoInicial {
-    width: 320px;
-    display: inline-block;
-    padding: 40px 50px 70px 20px;
-    position: absolute;
-    right: 0px;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
-}
+    .header__logoInicial {
+        width: 320px;
+        display: inline-block;
+        padding: 40px 50px 70px 20px;
+        position: absolute;
+        right: 0px;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: initial;
+    }
 
-.header__tituloInicial {
-    color:$color-titulo;
-    font-size: 60px;
-    text-align: left;
-    font-family: 'Public Sans', sans-serif;
-    display: inline-block;
-    text-shadow: 2px 2px $color-claro;
-    padding: 20px 20px 20px 20px;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
-}
+    .header__tituloInicial {
+        color:$color-titulo;
+        font-size: 60px;
+        text-align: left;
+        font-family: $fuente-principal;
+        display: inline-block;
+        text-shadow: 2px 2px $color-claro;
+        padding: 20px 20px 20px 20px;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: initial;
+    }
 
 /* A N I M A C I O N    H E A D E R */
 
@@ -61,27 +62,30 @@ header {
 
 /* E S T I L O S    M E N U    D E     N A V E G A C I O N */
 
-ul li {
-    list-style: none;
-    display: inline;
-    text-transform: uppercase;
-    background-color: $color-principal;
-    background-image: linear-gradient(to right, #f0d6b4, $color-claro, $color-claro,$color-claro, $color-claro);
-    transform: translate(-105px);
+ul  {
+
+    li {
+        list-style: none;
+        display: inline;
+        text-transform: uppercase;
+        background-color: $color-principal;
+        background-image: linear-gradient(to right, #f0d6b4, $color-claro, $color-claro,$color-claro, $color-claro);
+        transform: translate(-105px);
+
+            &:hover {
+                border: 1px solid $color-titulo;
+            }
+    }
 }
 
-.nav-link {
-    text-decoration: none;
-    color:rgb(97, 96, 96);
-}
+    .nav-link {
+        text-decoration: none;
+        color:rgb(97, 96, 96);
+    }
 
-li:hover {
-    border: 1px solid $color-titulo;
-}
-
-.dropdown {
-    display: none;
-}
+    .dropdown {
+        display: none;
+    }
 
 /* E S T I L O S     F O R M U L A R I O S */
 
@@ -94,7 +98,7 @@ form {
 h2 , h3 , h4 , h5 {
     padding: 40px 0px 0px 0px;
     color:rgb(97, 96, 96);
-    font-family: 'Public Sans', sans-serif;
+    font-family: $fuente-principal;
     text-shadow: 2px 2px $color-claro;
 }
 
@@ -105,7 +109,7 @@ h4 {
 h6 {
     padding: 20px;
     color: $color-blanco;
-    font-family: 'Public Sans', sans-serif;
+    font-family: $fuente-principal;
 }
 
 
