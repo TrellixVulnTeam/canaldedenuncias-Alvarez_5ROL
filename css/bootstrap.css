@@ -86,7 +86,6 @@ h6 {
 footer {
   background-color: #bc843a; }
 
-/* M E D I A     Q U E R I E S */
 @media screen and (max-width: 900px) {
   .header__logoInicial {
     width: 200px; }

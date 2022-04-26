@@ -1,0 +1,49 @@
+@media screen and (max-width: 900px) {
+
+    .header__logoInicial {
+        width: 200px;
+    }
+
+    nav .container {
+        display: none;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .header__logoInicial {
+        display: none;
+    }
+
+    .header__tituloInicial {
+        font-size: 50px;
+    }
+
+    nav .container {
+        display: none;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .imagen__instructivoPasos , .video__Canal , .video__Codigo {
+        width: 100%;
+    }    
+
+    h4 {
+        transform: translate(0px);
+    }
+
+    form {
+        padding: 10px;
+    }
+
+
+}
