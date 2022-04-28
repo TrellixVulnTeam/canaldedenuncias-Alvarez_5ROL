@@ -67,7 +67,6 @@ ul  {
         text-transform: uppercase;
         background-color: $color-principal;
         background-image: linear-gradient(to right, #f0d6b4, $color-claro, $color-claro,$color-claro, $color-claro);
-        transform: translate(-105px);
 
             &:hover {
                 border: 1px solid $color-titulo;
