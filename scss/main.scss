@@ -92,24 +92,16 @@ form {
 
 /* E S T I L O S     T E X T O S */
 
-h2 {
+h2 , h3 , h5 {
     padding: 40px 0px 0px 0px;
     color:rgb(97, 96, 96);
     font-family: $fuente-principal;
     text-shadow: 2px 2px $color-claro;
 }
 
-h3 {
-    @extend h2;
-}
-
 h4 {
     @extend h2;
     transform: translate(150px);
-}
-
-h5 {
-    @extend h2;
 }
 
 h6 {
